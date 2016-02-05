@@ -5,7 +5,7 @@ $(document).ready(function() {
 	
 	$(window).load(function(){
 
-		$('#page-loader').delay(1000).fadeOut(500);
+		$('#page-loader').fadeOut(500);
 	})	
 	
 	/*============================================
@@ -24,18 +24,20 @@ $(document).ready(function() {
 	Navigation Functions
 	==============================================*/
 	if ($(window).scrollTop()===0){
-		$('#main-nav').removeClass('scrolled');
+		$('#main-nav, #color-overlay').removeClass('scrolled');
+
 	}
 	else{
-		$('#main-nav').addClass('scrolled');    
+		$('#main-nav, #color-overlay').addClass('scrolled');
+
 	}
 	
 	$(window).scroll(function(){
 		if ($(window).scrollTop()===0){
-			$('#main-nav').removeClass('scrolled');
+			$('#main-nav, #color-overlay').removeClass('scrolled');
 		}
 		else{
-			$('#main-nav').addClass('scrolled');    
+			$('#main-nav, #color-overlay').addClass('scrolled');  
 		}
 	});
 	

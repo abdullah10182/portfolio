@@ -116,16 +116,17 @@ a:focus,
     z-index:1;
 }
 
-#color-overlay {
+#color-overlay.scrolled {
     position:fixed;
     top:0;
     left:0;
     width:100%;
     height:100%;
-    background: #ACFFA2;
+    background: #83C6FF;
     filter:alpha(opacity=70);
-    opacity: 0.2;
+    opacity: 0.6;
     z-index:-99999;
+    transition: all 1000ms;
 }
 
 .img-center{
@@ -452,7 +453,9 @@ a.btn-theme:focus{
 
 .jumbotron .message-box{
     margin:50px auto 0;
-	background:transparent;
+    /* top: 30%; */
+    margin-top: 55%;
+    background:transparent;
     padding:20px 0;
 }
 
