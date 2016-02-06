@@ -2,4 +2,4 @@
 assets/background-images/surf.jpg">
 </div>
 <!-- color overlay from templage -->
-<<div id="color-overlay" ></div>
+<div id="color-overlay" ></div>
